@@ -1,0 +1,12 @@
+{
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5432,
+    "username": "jamescoonce",
+    "password": "",
+    "database": "NestTypeORMAuth",
+    "entities": [
+        "src/**/**.entity{.ts,.js}"
+    ],
+    "synchronize": true
+}
