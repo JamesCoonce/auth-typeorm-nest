@@ -1,12 +1,8 @@
 import {
-    Entity,
-    PrimaryGeneratedColumn,
-    Column,
-    CreateDateColumn,
-    BeforeInsert,
-    OneToMany,
-    ManyToMany,
-    JoinTable,
+  Entity,
+  PrimaryGeneratedColumn,
+  Column,
+  BeforeInsert,
 } from 'typeorm';
 import * as bcrypt from 'bcrypt';
 import { UserRO } from './users.ro';

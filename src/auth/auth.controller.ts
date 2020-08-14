@@ -11,15 +11,15 @@ import {
   Param,
   Delete,
 } from '@nestjs/common';
-import { ApiUseTags, ApiResponse } from '@nestjs/swagger';
+import { ApiTags } from '@nestjs/swagger';
 import { AuthService } from './auth.service';
 import { UsersService } from 'src/users/users.service';
 import { CreateUserDto } from 'src/users/users.dto';
-import { debug } from 'util';
+// import { debug } from 'util';
 import { LoginUserDto } from './login.dto';
 import { AuthGuard } from '@nestjs/passport';
 
-@ApiUseTags('auth')
+@ApiTags('auth')
 @Controller('auth')
 export class AuthController {
   constructor(

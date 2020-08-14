@@ -13,7 +13,7 @@ export class AuthService {
   constructor(private readonly usersService: UsersService) {}
 
   private readonly logger = new Logger(AuthService.name);
-  
+
   async register(user: CreateUserDto) {
     let status: RegistrationStatus = {
       success: true,
